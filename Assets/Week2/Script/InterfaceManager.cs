@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InterfaceManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI label;
 
-    // Update is called once per frame
-    void Update()
-    {
+
+    // Send message on cosole
+   public void PrintMessage()
+   {
+        label.text = "Hello";
         
-    }
+   }
+     
 }
