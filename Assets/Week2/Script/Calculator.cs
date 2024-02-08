@@ -21,7 +21,6 @@ public class Calculator : MonoBehaviour
     //Bool clearPrevInput will help in clearing previous input if it is True/False if typing another value input.
     public bool clearPrevInput;
 
-   
     private EquationType equationType;
 
     private void Start()
@@ -29,7 +28,11 @@ public class Calculator : MonoBehaviour
         Clear();
     }
 
-    
+    //public void PrintMessage(string msg)
+    //{
+    //    label.text = msg;
+    //}
+
     public void AddInput(string input)
     {
         clearPrevInput = true;
