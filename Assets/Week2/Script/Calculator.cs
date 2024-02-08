@@ -39,11 +39,11 @@ public class Calculator : MonoBehaviour
 
         if (clearPrevInput)
         {
-            //Note to self for future reference: not text.label since text is a property while label is an instance 
             label.text = string.Empty;
 
             clearPrevInput = false;
         }
+        
         //new input will be added to the previous Input that was cleared
         label.text = label.text + input;
     }
