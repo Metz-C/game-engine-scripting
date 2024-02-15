@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 147332177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462146985}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveVertical
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &147332177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,8 +502,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 886630383}
-  - {fileID: 1598291162}
   - {fileID: 2030996205}
+  - {fileID: 1598291162}
   m_Father: {fileID: 203528716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -643,6 +655,7 @@ GameObject:
   - component: {fileID: 462146983}
   - component: {fileID: 462146982}
   - component: {fileID: 462146981}
+  - component: {fileID: 462146985}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -734,6 +747,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &462146985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462146980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c31eff338bc3dc448ca1450ef86103c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridRoot: {fileID: 860187076}
+  cellPrefab: {fileID: 5563598192762286563, guid: 13eb5ea11f9d1424b979cdfa157d5625, type: 3}
+  winLabel: {fileID: 1598291161}
+  timeLabel: {fileID: 2030996206}
+  scoreLabel: {fileID: 886630384}
 --- !u!1 &525305947
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +846,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 525305950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462146985}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: Fire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &525305950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,7 +979,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 662143560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462146985}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveHorizontal
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &662143560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,7 +1548,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 913560537}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462146985}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveHorizontal
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &913560537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1590,7 +1656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You WIN!
+  m_text: You Win!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1975,7 +2041,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1882133262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462146985}
+        m_TargetAssemblyTypeName: Battleship.GameManager, Assembly-CSharp
+        m_MethodName: MoveVertical
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1882133262
 MonoBehaviour:
   m_ObjectHideFlags: 0
