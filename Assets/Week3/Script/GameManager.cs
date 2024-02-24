@@ -156,7 +156,7 @@ namespace  Battleship
 
         void TryEndGame()
         {
-           for (int row= 0; row < nRows; row++)
+           for (int row = 0; row < nRows; row++)
             {
                 for (int col = 0; col < nCols; col++)
                 {
@@ -166,13 +166,17 @@ namespace  Battleship
                 }
            }
 
-            winLabel.SetActive(false);
+            winLabel.SetActive(true);
 
             CancelInvoke("IncrementTime");
 
         }
 
-      
+        private void Update()
+        {
+
+        }
+
 
     }
 }
